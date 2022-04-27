@@ -24,14 +24,25 @@
     <section>
         <h3>Calculo del area y perimetro de un triangulo isoceles</h3>
         <form action="">
-            <label for="InputTriangulo">Ingrese las medidas del lado A</label>
+            <label for="InputTrianguloA">Ingrese las medidas del lado A</label>
             <input id="InputTrianguloA" type="number"> <br>
-            <label for="InputTriangulo">Ingrese las medidas del lado B</label>            
+            <label for="InputTrianguloB">Ingrese las medidas del lado B</label>            
             <input id="InputTrianguloB" type="number"> <br>
-            <label for="InputTriangulo">Ingrese las medidas de lado C</label>
+            <label for="InputTrianguloC">Ingrese las medidas de lado C</label>
             <input id="InputTrianguloC" type="number">
             <button type="button" onclick="calcPerimetroTriangulo()">Calcular perimetro</button>
-            <button type="button" onclick="calcAlturaTriangulo()">Calcular altura</button>
+            <button type="button" onclick="calcAlturaTrianguloIsoceles()">Calcular altura</button>
+        </form>
+    </section>
+    <section>
+        <h3>Calculo del diametro, perimetro y área de un circulo</h3>
+        <form action="">
+            <label for="InputCirculo">Ingrese las medidas de los lados</label>
+            <input id="InputCirculo" type="number">
+            <button type="button" onclick="calcDiametroCirculo()">Calcular diametro</button>
+            <button type="button" onclick="calcPerimetroCirculo()">Calcular perimetro</button>
+            <button type="button" onclick="calcAreaCirculo()">Calcular area</button>
+ 
         </form>
     </section>
     <script src="./figuras.js"></script>
