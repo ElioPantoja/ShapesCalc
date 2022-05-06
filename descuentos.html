@@ -9,7 +9,16 @@
 <body> 
     <h2>Calcular descuentos</h2>
     <section>
+        <form>
+            <label for="InputPrice">Escribe el precio del producto</label>
+            <input id="InputPrice" type="number">
 
+            <label for="InputDiscount">Escribe el descuento del producto</label>
+            <input id="InputDiscount" type="number">
+            <button type="button" onclick="priceDiscount()" >Calcular precio</button>
+
+            <p id="ResultP"></p>
+        </form>
     </section>
 <script src="./descuentos.js"></script>    
 </body>
