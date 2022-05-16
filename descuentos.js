@@ -1,6 +1,6 @@
 /* const precioOriginal = 100;
 const descuento = 15; */
-
+const cupones = ["quierodescuento", "25off", "lovimasbarato"]
 
 function calcPrecioConDescuento(precio, descuento){
     const porcentajePrecioConDescuento = 100 - descuento;
@@ -19,4 +19,21 @@ function priceDiscount(){
     const resultP = document.getElementById("ResultP");
     resultP.innerText = "El precio final es: $" + precioConDescuento
     
+}
+
+const isChecked = document.getElementById("CheckCoupon")
+isChecked.addEventListener("click",couponClick);
+
+function couponClick(){
+    if (isChecked.checked == true) {
+        document.getElementById("InputDiscount").style.display = "none";
+        document.getElementById("labelInputDiscount").style.display = "none";
+        document.getElementById("inputCoupon").disabled = false;
+        console.log("esta marcado")
+    }else{
+        document.getElementById("InputDiscount").style.display = "";
+        document.getElementById("labelInputDiscount").style.display = "";
+        document.getElementById("inputCoupon").disabled= true;
+        console.log("no esta marcado")
+    }
 }
