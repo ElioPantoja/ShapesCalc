@@ -18,6 +18,14 @@ function priceDiscount(){
     const precioConDescuento = calcPrecioConDescuento(priceValue,discountValue)
     const resultP = document.getElementById("ResultP");
     resultP.innerText = "El precio final es: $" + precioConDescuento
+
+    if (cupones.includes(inputCoupon.value)){
+        console.log("cupon ok")
+        resultP.innerText = "El precio final es: $" + (priceValue*0.75)
+    }
+    else{
+        alert("Ingrese un cupon valido")
+    }
     
 }
 
@@ -37,3 +45,4 @@ function couponClick(){
         console.log("no esta marcado")
     }
 }
+
