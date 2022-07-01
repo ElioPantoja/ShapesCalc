@@ -1,3 +1,7 @@
-const list1 = [123,55,766,34];
+let list = [123,3,78,24,21,28,85,61]
 
-let sumaList1 = list1.reduce((acum,pos)=> acum+pos)
+function promedio (list){
+    let sumaList = list.reduce((acum,pos)=> acum+pos)
+    let promedio = sumaList/list.length
+    return promedio
+}
