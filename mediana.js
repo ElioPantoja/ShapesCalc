@@ -1,9 +1,14 @@
-let list = [123,4,554,67865,95]
-
 function promedio (list){
     let sumaList = list.reduce((acum,pos)=> acum+pos)
-    let promedio = sumaList/list.length
     return promedio
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+
+//let list = [123,4,554,67865,95]
+function inputList(list){
+    list.sort((a,b)=> a-b)
+    return list
 }
 
 let mitadlista = parseInt(list.length / 2)
@@ -14,20 +19,17 @@ function esPar(number){
     }else{
         return false
     }
- }
+}
 
 let mediana;
 
- if (esPar (list.length)){
+if (esPar (list.length)){
     const elemento1 = list[mitadlista-1]
     const elemento2 = list[mitadlista]
     const promedio = promedio[elemento1,elemento2]
     mediana= promedio
-
- }else{
+}else{
     mediana = list[mitadlista]
- }
-
-
+}
 
  
