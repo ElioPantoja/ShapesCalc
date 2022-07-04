@@ -1,5 +1,6 @@
 function promedio (list){
     let sumaList = list.reduce((acum,pos)=> acum+pos)
+    let promedio = sumaList/list.length
     return promedio
 }
 
@@ -13,10 +14,8 @@ function calcularMediana(list){
 
     function esPar(number){
         if (list.length % 2 === 0){
-            console.log("Par")
             return true
         }else{
-            console.log("impar")
             return false
         }
     }
@@ -26,8 +25,8 @@ function calcularMediana(list){
     if (esPar (list.length)){
         const elemento1 = list[mitadlista-1]
         const elemento2 = list[mitadlista]
-        const promedioElementos = promedio[elemento1,elemento2]
-        mediana= promedio
+        const promedioElementos = promedio([elemento1,elemento2])
+        mediana = promedioElementos;
     }else{
         mediana = list[mitadlista]
     }
