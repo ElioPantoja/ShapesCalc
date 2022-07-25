@@ -5,3 +5,7 @@ function promedio (list){
     let promedio = sumaList/list.length
     return promedio
 }
+
+
+asd = 123;
+console.log('la variable es ${asd}');
